@@ -20,11 +20,11 @@
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
   <!-- DaisyUI cdn link  -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script> -->
 
   <!-- custom tailwind style  -->
-  <!-- <style type="text/tailwindcss">
+  <style type="text/tailwindcss">
     @theme {
             
           --color-main: #F9DF8A;
@@ -35,12 +35,56 @@
           --font-secondary: "ADLaM Display", serif;
         }
         
-      </style> -->
+  </style>
 
 </head>
 
 <body class="font-sora">
-  <header></header>
+  <header>
+    <nav class=" bg-[#FFF9F4] h-24 flex items-center border-b border-Accent md:border-b-0">
+      <div class="nav-content container md:container mx-auto flex justify-between items-center">
+        <div class="brand flex gap-3 items-center">
+          <img src="assets/logo-header.png" alt="">
+          <h1 class="hidden lg:block text-[1.525rem] font-normal">
+            Browse<span class="text-Accent">4</span>Pets
+          </h1>
+        </div>
+
+        <div class="menu hidden lg:block">
+          <ul class="flex items-center">
+            <li class="mr-8"><a class="text-xl font-normar text-textColor" href="#">Find a pet</a></li>
+            <li class="mr-8"><a class="text-xl font-normar text-textColor" href="#">Breeds</a></li>
+            <li class="mr-8"><a class="text-xl font-normar text-textColor" href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="button-area hidden lg:block">
+          <span class="text-xl mr-3"><i class="fa-regular fa-bell"></i></span>
+          <span class="text-xl mr-2"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <button class="text-xl py-3 px-5 border border-Accent rounded-lg cursor-pointer hover:bg-Accent transition duration-400">
+            Login
+          </button>
+          <button class="bg-Accent text-xl py-3 px-5 border-none rounded-lg cursor-pointer ml-2">Register</button>
+        </div>
+        <div class="menu-icon lg:hidden">
+          <span class="text-2xl text-textColor cursor-pointer"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </div>
+    </nav>
+    <section class="banner container md:container mx-auto">
+      <div class="banner-content bg-[url('./assets/cat-big.png')] bg-no-repeat bg-contain bg-bottom h-[750px] w-full">
+        <div class="content-text">
+          <h1 class="font-secondary font-normal text-[3.5rem] leading-[73px] text-textColor mb-4">Pamper Your Pet, <br>
+            Because They Deserve <br>the Bes</h1>
+          <p class="text-xl text-textColor mb-6">
+            Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make
+            tails wag with joy!
+          </p>
+          <button class="bg-Accent text-xl py-3 px-5 border-none rounded-lg cursor-pointer">Find a pet</button>
+        </div>
+      </div>
+    </section>
+  </header>
 
   <main></main>
 
