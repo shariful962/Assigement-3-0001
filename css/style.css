@@ -1,3 +1,14 @@
 .product-box .product-right .right-box {
     border: 1px solid rgba(17, 17, 17, 0.1);
 }
+ .price-content .price-box .price-left-box {
+    background: linear-gradient(134.71deg, rgb(248, 204, 251) 1.286%,rgb(172, 210, 253) 100%);
+    border-radius: 12px;
+}
+.price .price-content .price-box .price-right-box {
+    background: linear-gradient(134.71deg, rgb(255, 249, 244) 1.511%,rgb(249, 223, 138) 100%);
+    border-radius: 12px;
+}  
+.price-box {
+    /* display: flex; */
+}
