@@ -24,4 +24,23 @@
     }
 }
 
+.banner .banner-content .animation_text {
+    animation: fadeInOut 5s linear infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        color: red;
+    }
+    50% {
+        opacity: 1;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+        color: red;
+    }
+}
+
 
